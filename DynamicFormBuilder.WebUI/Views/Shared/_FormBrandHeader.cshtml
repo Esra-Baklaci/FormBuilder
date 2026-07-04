@@ -1,0 +1,16 @@
+@model DynamicFormBuilder.Business.Models.FormDetailDto
+@{
+    var style = $"--form-primary:{Model.PrimaryColor};--form-bg:{Model.BackgroundColor};--form-btn:{Model.ButtonColor};";
+}
+
+<div class="form-brand-header mb-4" style="@style">
+    @if (!string.IsNullOrWhiteSpace(Model.LogoUrl))
+    {
+        <img src="@Model.LogoUrl" alt="@Model.Title logo" class="form-brand-logo" />
+    }
+    <h1 class="form-brand-title">@Model.Title</h1>
+    @if (!string.IsNullOrWhiteSpace(Model.Description))
+    {
+        <p class="form-brand-desc">@Model.Description</p>
+    }
+</div>

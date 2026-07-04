@@ -1,0 +1,46 @@
+@model DynamicFormBuilder.Business.Models.FormDetailDto
+@{
+    ViewData["Title"] = "Önizleme - " + Model.Title;
+    var themeClass = Model.Theme switch
+    {
+        DynamicFormBuilder.Entity.Enums.FormTheme.Dark => "theme-dark",
+        DynamicFormBuilder.Entity.Enums.FormTheme.Rounded => "theme-rounded",
+        DynamicFormBuilder.Entity.Enums.FormTheme.Flat => "theme-flat",
+        _ => "theme-light"
+    };
+    var brandStyle = $"--form-primary:{Model.PrimaryColor};--form-bg:{Model.BackgroundColor};--form-btn:{Model.ButtonColor};";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="app-page-title">Form Önizleme</h1>
+        <p class="app-page-subtitle">@Model.Title</p>
+    </div>
+    <div class="d-flex gap-2">
+        <a asp-controller="FormBuilder" asp-action="Index" asp-route-id="@Model.Id" class="btn btn-fb btn-fb-primary btn-sm">Builder'a Dön</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-fb btn-fb-outline btn-sm">Ayarlar</a>
+    </div>
+</div>
+
+<div class="card app-card form-branded @themeClass" style="@brandStyle">
+    <div class="card-body p-4">
+        <partial name="_FormBrandHeader" model="Model" />
+
+        <form id="previewForm" class="dynamic-form" novalidate>
+            @foreach (var field in Model.Fields.OrderBy(f => f.SortOrder))
+            {
+                <partial name="_FieldRender" model="field" />
+            }
+            <div class="form-grid-full">
+                <button type="button" class="btn btn-fb btn-fb-primary form-brand-btn" disabled>Gönder (Önizleme)</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        window.conditionalLogics = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ConditionalLogics, new System.Text.Json.JsonSerializerOptions { PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase }));
+    </script>
+    <script src="~/js/conditional-logic.js" asp-append-version="true"></script>
+}

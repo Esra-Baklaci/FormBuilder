@@ -1,0 +1,33 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+out/
+
+## IDE
+.vs/
+.vscode/
+*.user
+*.suo
+
+## Cursor / local tooling (do not publish)
+canvases/
+mcps/
+node_modules/
+
+## OS
+Thumbs.db
+.DS_Store
+
+## Uploads (keep folder, ignore files)
+DynamicFormBuilder.WebUI/wwwroot/uploads/**
+!DynamicFormBuilder.WebUI/wwwroot/uploads/.gitkeep
+
+## Secrets (local-only settings — never push)
+**/appsettings.Development.json
+**/appsettings.Local.json
+*.pfx
+
+## SQLite (local dev)
+*.db
+*.db-shm
+*.db-wal

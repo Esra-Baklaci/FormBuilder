@@ -1,0 +1,471 @@
+`..\DynamicFormBuilder.Entity\DynamicFormBuilder.Entity.csproj` başvurusu projeye eklendi.
+`..\DynamicFormBuilder.DataAccess\DynamicFormBuilder.DataAccess.csproj` başvurusu projeye eklendi.
+`..\DynamicFormBuilder.Entity\DynamicFormBuilder.Entity.csproj` başvurusu projeye eklendi.
+`..\DynamicFormBuilder.Business\DynamicFormBuilder.Business.csproj` başvurusu projeye eklendi.
+  Geri yüklenecek projeler belirleniyor...
+  Writing C:\Users\esra.baklaci\AppData\Local\Temp\tmpjqyvy0.tmp
+info : X.509 sertifika zinciri doğrulaması, kod imzalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : X.509 sertifika zinciri doğrulaması, zaman damgalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : 'DynamicFormBuilder.DataAccess/DynamicFormBuilder.DataAccess.csproj' projesine 'Microsoft.EntityFrameworkCore.SqlServer' paketi için PackageReference ekleniyor.
+info : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\DynamicFormBuilder.DataAccess.csproj için paketler geri yükleniyor...
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/8.0.11/microsoft.entityframeworkcore.sqlserver.8.0.11.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.sqlserver/8.0.11/microsoft.entityframeworkcore.sqlserver.8.0.11.nupkg 381 ms
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/8.0.11/microsoft.entityframeworkcore.relational.8.0.11.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/5.1.6/microsoft.data.sqlclient.5.1.6.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/index.json 65 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/8.0.1/system.formats.asn1.8.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.relational/8.0.11/microsoft.entityframeworkcore.relational.8.0.11.nupkg 83 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient/5.1.6/microsoft.data.sqlclient.5.1.6.nupkg 128 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/8.0.1/system.formats.asn1.8.0.1.nupkg 88 ms
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/8.0.11/microsoft.entityframeworkcore.8.0.11.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore/8.0.11/microsoft.entityframeworkcore.8.0.11.nupkg 29 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg 37 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.identity/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.sqlserver.server/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime.caching/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/8.0.11/microsoft.entityframeworkcore.abstractions.8.0.11.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/8.0.11/microsoft.entityframeworkcore.analyzers.8.0.11.nupkg
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/8.0.1/microsoft.extensions.caching.memory.8.0.1.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/index.json 64 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/index.json 135 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/5.1.1/microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/index.json 147 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/6.35.0/microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.identity/index.json 167 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/index.json 171 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.identity/1.11.4/azure.identity.1.11.4.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/4.61.3/microsoft.identity.client.4.61.3.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.analyzers/8.0.11/microsoft.entityframeworkcore.analyzers.8.0.11.nupkg 157 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.abstractions/8.0.11/microsoft.entityframeworkcore.abstractions.8.0.11.nupkg 158 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.memory/8.0.1/microsoft.extensions.caching.memory.8.0.1.nupkg 150 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg 169 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.data.sqlclient.sni.runtime/5.1.1/microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg 69 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/index.json 198 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg 174 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/index.json 191 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols.openidconnect/6.35.0/microsoft.identitymodel.protocols.openidconnect.6.35.0.nupkg 148 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.identity/1.11.4/azure.identity.1.11.4.nupkg 52 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.jsonwebtokens/6.35.0/microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg 69 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client/4.61.3/microsoft.identity.client.4.61.3.nupkg 55 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.sqlserver.server/index.json 239 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg 41 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg 43 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/index.json 249 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/index.json 292 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/index.json 314 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime.caching/index.json 310 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/6.0.1/system.configuration.configurationmanager.6.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/index.json 310 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/5.0.0/system.security.cryptography.cng.5.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg 78 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime.caching/6.0.0/system.runtime.caching.6.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg 57 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/6.0.0/system.text.encoding.codepages.6.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/6.0.1/system.configuration.configurationmanager.6.0.1.nupkg 36 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/5.0.0/system.security.cryptography.cng.5.0.0.nupkg 38 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime.caching/6.0.0/system.runtime.caching.6.0.0.nupkg 41 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding.codepages/6.0.0/system.text.encoding.codepages.6.0.0.nupkg 66 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.core/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.memory/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/system.text.json/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.json/4.7.2/system.text.json.4.7.2.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.json/4.7.2/system.text.json.4.7.2.nupkg 45 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.memory/index.json 147 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.core/index.json 156 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.memory/4.5.4/system.memory.4.5.4.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/azure.core/1.38.0/azure.core.1.38.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/index.json 171 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/index.json 171 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/index.json 190 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/4.7.0/system.security.cryptography.protecteddata.4.7.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/4.61.3/microsoft.identity.client.extensions.msal.4.61.3.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/azure.core/1.38.0/azure.core.1.38.0.nupkg 37 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.memory/4.5.4/system.memory.4.5.4.nupkg 39 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg 61 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/4.7.0/system.security.cryptography.protecteddata.4.7.0.nupkg 62 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identity.client.extensions.msal/4.61.3/microsoft.identity.client.extensions.msal.4.61.3.nupkg 63 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/6.0.0/system.security.cryptography.protecteddata.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/6.0.0/system.configuration.configurationmanager.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.formats.asn1/5.0.0/system.formats.asn1.5.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg 28 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/6.0.0/system.security.cryptography.protecteddata.6.0.0.nupkg 30 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.formats.asn1/5.0.0/system.formats.asn1.5.0.0.nupkg 26 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.memory.data/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.clientmodel/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.bcl.asyncinterfaces/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.configuration.configurationmanager/6.0.0/system.configuration.configurationmanager.6.0.0.nupkg 32 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg 28 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg 31 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg 36 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg 51 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg 51 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg 65 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/index.json 134 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/index.json 129 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/6.35.0/microsoft.identitymodel.abstractions.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding/index.json 135 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/index.json 135 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/6.35.0/microsoft.identitymodel.tokens.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/index.json 131 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/index.json 153 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/index.json 151 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.abstractions/6.35.0/microsoft.identitymodel.abstractions.6.35.0.nupkg 29 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.protocols/6.35.0/microsoft.identitymodel.protocols.6.35.0.nupkg 24 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.memory.data/index.json 130 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg 38 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.tokens/6.35.0/microsoft.identitymodel.tokens.6.35.0.nupkg 42 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/index.json 195 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg 73 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg 84 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg 101 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg 99 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.clientmodel/index.json 295 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg 67 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.clientmodel/1.0.0/system.clientmodel.1.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/index.json 155 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/6.35.0/microsoft.identitymodel.logging.6.35.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.csharp/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.clientmodel/1.0.0/system.clientmodel.1.0.0.nupkg 36 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.identitymodel.logging/6.35.0/microsoft.identitymodel.logging.6.35.0.nupkg 30 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.text.json/4.6.0/system.text.json.4.6.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg 39 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg 33 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.text.json/4.6.0/system.text.json.4.6.0.nupkg 28 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.csharp/index.json 137 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/index.json 128 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/index.json 133 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime/index.json 138 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg 24 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg 29 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg 28 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg 42 ms
+info : Sf4BoE6Q3jTgFkgBkx7qztYOFELBCo+wQgpYDwal/qJ1unBH73ywPztIJKXBXORRzAeNijsuxhk94h0TIMvfYg== içerik karması ile Azure.Identity 1.11.4, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\azure.identity\1.11.4 konumuna yüklendi.
+info : ++zY0Ea724ku1jptWJmF7jm3I4IXTexfT4qi1ETcSFFF7qj+qm6rRgN7mTuKkwIETuXk0ikfzudryRjUGrrNKQ== içerik karması ile Microsoft.EntityFrameworkCore.Abstractions 8.0.11, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.entityframeworkcore.abstractions\8.0.11 konumuna yüklendi.
+info : yxGIQd3BFK7F6S62/7RdZk3C/mfwyVxvh6ngd1VYMBmbJ1YZZA9+Ku6suylVtso0FjI0wbElpJ0d27CdsyLpBQ== içerik karması ile System.IdentityModel.Tokens.Jwt 6.35.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.identitymodel.tokens.jwt\6.35.0 konumuna yüklendi.
+info : jePrSfGAmqT81JDCNSY+fxVWoGuJKt9e6eJ+vT7+quVS55nWl//jGjUQn4eFtVKt4rt5dXaleZdHRB9J9AJZ7Q== içerik karması ile Microsoft.IdentityModel.Logging 6.35.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identitymodel.logging\6.35.0 konumuna yüklendi.
+info : PWnJcznrSGr25MN8ajlc2XIDW4zCFu0U6FkpaNLEWLgd1NgFCp5uDY3mqLDgM8zCN8hqj8yo5wHYfLB2HjcdGw== içerik karması ile Microsoft.Identity.Client.Extensions.Msal 4.61.3, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identity.client.extensions.msal\4.61.3 konumuna yüklendi.
+info : 3KuSxeHoNYdxVYfg2IRZCThcrlJ1XJqIXkAWikCsbm5C/bCjv7G0WoKDyuR98Q+T607QT2Zl5GsbGRkENcV2yQ== içerik karması ile Microsoft.Extensions.Caching.Abstractions 8.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.caching.abstractions\8.0.0 konumuna yüklendi.
+info : BmANAnR5Xd4Oqw7yQ75xOAYODybZQRzdeNucg7kS5wWKd2PNnMdYtJ2Vciy0QLylRmv42DGl5+AFL9izA6F1Rw== içerik karması ile Microsoft.Extensions.DependencyInjection 8.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.dependencyinjection\8.0.1 konumuna yüklendi.
+info : naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA== içerik karması ile Microsoft.Identity.Client 4.61.3, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identity.client\4.61.3 konumuna yüklendi.
+info : dWGKvhFybsaZpGmzkGCbNNwBD1rVlWzrZKANLW/CcbFJpCEceMCGzT7zZwHOGBCbwM0SzBuceMj5HN1LKV1QqA== içerik karması ile Microsoft.Extensions.Options 8.0.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.options\8.0.2 konumuna yüklendi.
+info : bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g== içerik karması ile Microsoft.Extensions.Primitives 8.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.primitives\8.0.0 konumuna yüklendi.
+info : iTUgB/WtrZ1sWZs84F2hwyQhiRH6QNjQv2DkwrH+WP6RoFga2Q1m3f9/Q7FG8cck8AdHitQkmkXSY8qylcDmuA== içerik karması ile System.Text.Encodings.Web 4.7.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.text.encodings.web\4.7.2 konumuna yüklendi.
+info : /iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg== içerik karması ile System.Runtime.CompilerServices.Unsafe 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.runtime.compilerservices.unsafe\6.0.0 konumuna yüklendi.
+info : kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A== içerik karması ile Microsoft.NETCore.Platforms 1.1.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.netcore.platforms\1.1.0 konumuna yüklendi.
+info : Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w== içerik karması ile System.Text.Encodings.Web 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.text.encodings.web\6.0.0 konumuna yüklendi.
+info : NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg== içerik karması ile System.Drawing.Common 6.0.0, C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\ konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.drawing.common\6.0.0 konumuna yüklendi.
+info : stbjWBTtpQ1HtqXMFyKnXFTr76PvaOHI2b2h85JqBi3eZr00nspvR/a90Zwh8CQ4rVawqLiTG0+0yZQWaav+sQ== içerik karması ile Microsoft.EntityFrameworkCore 8.0.11, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.entityframeworkcore\8.0.11 konumuna yüklendi.
+info : MTvUIktmemNB+El0Fgw9egyqT9AYSIk6DTJeoDSpc3GIHxHCMo8COqkWT1mptX5tZ1SlQ6HJZ0OsSvMth1c12w== içerik karması ile System.Formats.Asn1 5.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.formats.asn1\5.0.0 konumuna yüklendi.
+info : JGkzeqgBsiZwKJZ1IxPNsDFZDhUvuEdX8L8BDC8N3KOj+6zMcNU28CNN59TpZE/VJYy9cP+5M+sbxtWJx3/xtw== içerik karması ile System.Memory.Data 1.0.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.memory.data\1.0.2 konumuna yüklendi.
+info : 1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw== içerik karması ile System.Memory 4.5.4, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.memory\4.5.4 konumuna yüklendi.
+info : aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg== içerik karması ile Microsoft.NETCore.Targets 1.1.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.netcore.targets\1.1.0 konumuna yüklendi.
+info : ehYW0m9ptxpGWvE4zgqongBVWpSDU/JCFD4K7krxkQwSz/sFQjEXCUqpvencjy6DYDbn7Ig09R8GFffu8TtneQ== içerik karması ile System.Security.Cryptography.ProtectedData 4.7.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.cryptography.protecteddata\4.7.0 konumuna yüklendi.
+info : rp1gMNEZpvx9vP0JW0oHLxlf8oSiQgtno77Y4PLUBjSiDYoD77Y8uXHr1Ea5XG4/pIKhqAdxZ8v8OTUtqo9PeQ== içerik karması ile System.Security.Cryptography.ProtectedData 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.cryptography.protecteddata\6.0.0 konumuna yüklendi.
+info : 7T+m0kDSlIPTHIkPMIu6m6tV6qsMqJpvQWW2jIc2qi7sn40qxFo0q+7mEQAhMPXZHMKnWrnv47ntGlM/ejvw3g== içerik karması ile System.Configuration.ConfigurationManager 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.configuration.configurationmanager\6.0.0 konumuna yüklendi.
+info : cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg== içerik karması ile Microsoft.Extensions.DependencyInjection.Abstractions 8.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.dependencyinjection.abstractions\8.0.0 konumuna yüklendi.
+info : KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ== içerik karması ile System.Diagnostics.DiagnosticSource 6.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.diagnostics.diagnosticsource\6.0.1 konumuna yüklendi.
+info : 9wxai3hKgZUb4/NjdRKfQd0QJvtXKDlvmGMYACbEC8DFaicMFCFhQFZq9ZET1kJLwZahf2lfY5Gtcpsx8zYzbg== içerik karması ile Microsoft.IdentityModel.JsonWebTokens 6.35.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identitymodel.jsonwebtokens\6.35.0 konumuna yüklendi.
+info : wLBKzFnDCxP12VL9ANydSYhk59fC4cvOr9ypYQLPnAj48NQIhqnjdD2yhP8yEKyBJEjERWS9DisKL7rX5eU25Q== içerik karması ile System.Security.Cryptography.ProtectedData 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.cryptography.protecteddata\4.5.0 konumuna yüklendi.
+info : NI/AJQjtC7qgWM8Nr85sRkwlog2AnFer5RKP8xTUH0RuPF3nN0tGXBEeYJOLZWp+/+M/C6O7MMDRhKRE8bZwIA== içerik karması ile Microsoft.EntityFrameworkCore.Analyzers 8.0.11, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.entityframeworkcore.analyzers\8.0.11 konumuna yüklendi.
+info : wNGM5ZTQCa2blc9ikXQouybGiyMd6IHPVJvAlBEPtr6JepZEOYeDxGyprYvFVeOxlCXs7avridZQ0nYkHzQWCQ== içerik karması ile Microsoft.Data.SqlClient.SNI.runtime 5.1.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.data.sqlclient.sni.runtime\5.1.1 konumuna yüklendi.
+info : HFDnhYLccngrzyGgHkjEDU5FMLn4MpOsr5ElgsBMC4yx6lJh4jeWO7fHS8+TXPq+dgxCmUa/Trl8svObmwW4QA== içerik karması ile Microsoft.Extensions.Caching.Memory 8.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.caching.memory\8.0.1 konumuna yüklendi.
+info : 3TuuW3i5I4Ro0yoaHmi2MqEDGObOVuhLaMEnd/heaLB1fcvm4fu4PevmC4BOWnI0vo176AIlV5o4rEQciLoohw== içerik karması ile Microsoft.EntityFrameworkCore.Relational 8.0.11, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.entityframeworkcore.relational\8.0.11 konumuna yüklendi.
+info : I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw== içerik karması ile System.ClientModel 1.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.clientmodel\1.0.0 konumuna yüklendi.
+info : QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ== içerik karması ile System.Numerics.Vectors 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.numerics.vectors\4.5.0 konumuna yüklendi.
+info : IuEgCoVA0ef7E4pQtpC3+TkPbzaoQfa77HlfJDmfuaJUCVJmn7fT0izamZiryW5sYUFKizsftIxMkXKbgIcPMQ== içerik karması ile Azure.Core 1.38.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\azure.core\1.38.0 konumuna yüklendi.
+info : jXw9MlUu/kRfEU0WyTptAVueupqIeE3/rl0EZDMlf8pcvJnitQ8HeVEp69rZdaStXwTV72boi/Bhw8lOeO+U2w== içerik karması ile System.Configuration.ConfigurationManager 6.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.configuration.configurationmanager\6.0.1 konumuna yüklendi.
+info : 4x+pzsQEbqxhNf1QYRr5TDkLP9UsLT3A6MdRKDDEgrW7h1ljiEPgTNhKYUhNCCAaVpQECVQ+onA91PTPnIp6Lw== içerik karması ile Microsoft.Extensions.Logging 8.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.logging\8.0.1 konumuna yüklendi.
+info : RN7lvp7s3Boucg1NaNAbqDbxtlLj5Qeb+4uSS1TeK5FSBVM40P4DKaTKChT43sHyKfh7V0zkrMph6DdHvyA4bg== içerik karması ile Microsoft.IdentityModel.Tokens 6.35.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identitymodel.tokens\6.35.0 konumuna yüklendi.
+info : 4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA== içerik karması ile System.Text.Json 4.6.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.text.json\4.6.0 konumuna yüklendi.
+info : xuR8E4Rd96M41CnUSCiOJ2DBh+z+zQSmyrYHdYhD6K4fXBcQGVnRCFQ0efROUYpP+p0zC1BLKr0JRpVuujTZSg== içerik karması ile Microsoft.IdentityModel.Abstractions 6.35.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identitymodel.abstractions\6.35.0 konumuna yüklendi.
+info : yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w== içerik karması ile Microsoft.Bcl.AsyncInterfaces 1.1.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.bcl.asyncinterfaces\1.1.1 konumuna yüklendi.
+info : N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug== içerik karması ile Microsoft.SqlServer.Server 1.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.sqlserver.server\1.0.0 konumuna yüklendi.
+info : XqKba7Mm/koKSjKMfW82olQdmfbI5yqeoLV/tidRp7fbh5rmHAQ5raDI/7SU0swTzv+jgqtUGkzmFxuUg0it1A== içerik karması ile System.Formats.Asn1 8.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.formats.asn1\8.0.1 konumuna yüklendi.
+info : E0e03kUp5X2k+UAoVl6efmI7uU7JRBWi5EIdlQ7cr0NpBGjHG4fWII35PgsBY9T4fJQ8E4QPsL0rKksU9gcL5A== içerik karması ile System.Runtime.Caching 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.runtime.caching\6.0.0 konumuna yüklendi.
+info : BPQhlDzdFvv1PzaUxNSk+VEPwezlDEVADIKmyxubw7IiELK18uJ06RQ9QKKkds30XI+gDu9n8j24XQ8w7fjWcg== içerik karması ile Microsoft.IdentityModel.Protocols 6.35.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identitymodel.protocols\6.35.0 konumuna yüklendi.
+info : 3lE/iLSutpgX1CC0NOW70FJoGARRHbyKmG7dc0klnUZ9Dd9hS6N/POPWhKhMLCEuNN5nXEY5agmlFtH562vqhQ== içerik karması ile Microsoft.Extensions.Configuration.Abstractions 8.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.configuration.abstractions\8.0.0 konumuna yüklendi.
+info : IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog== içerik karması ile System.Windows.Extensions 6.0.0, C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\ konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.windows.extensions\6.0.0 konumuna yüklendi.
+info : rYYo8RyteIfRns+GuCcPRf3J7jS8gu8AxUWmFejrGoHTTKINhylL27N+SkFwCjxK4mscokjhQ1zjjJoNQ9oijA== içerik karması ile Microsoft.EntityFrameworkCore.SqlServer 8.0.11, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.entityframeworkcore.sqlserver\8.0.11 konumuna yüklendi.
+info : 3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg== içerik karması ile Microsoft.Extensions.DependencyInjection.Abstractions 8.0.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.dependencyinjection.abstractions\8.0.2 konumuna yüklendi.
+info : jIMXsKn94T9JY7PvPq/tMfqa6GAaHpElRDpmG+SuL+D3+sTw2M8VhnibKnN8Tq+4JqbPJ/f+BwtLeDMEnzAvRg== içerik karması ile System.Security.Cryptography.Cng 5.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.cryptography.cng\5.0.0 konumuna yüklendi.
+info : LMtVqnECCCdSmyFoCOxIE5tXQqkOLrvGrL7OxHg41DIm1bpWtaCdGyVcTAfOQpJXvzND9zUKIN/lhngPkYR8vg== içerik karması ile Microsoft.IdentityModel.Protocols.OpenIdConnect 6.35.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.identitymodel.protocols.openidconnect\6.35.0 konumuna yüklendi.
+info : AUADIc0LIEQe7MzC+I0cl0rAT8RrTAKFHl53yHjEUzNVIaUlhFY11vc2ebiVJzVBuOzun6F7FBA+8KAbGTTedQ== içerik karması ile System.Security.AccessControl 6.0.0, C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\ konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.accesscontrol\6.0.0 konumuna yüklendi.
+info : BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw== içerik karması ile System.Text.Encoding 4.3.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.text.encoding\4.3.0 konumuna yüklendi.
+info : ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A== içerik karması ile System.Text.Encoding.CodePages 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.text.encoding.codepages\6.0.0 konumuna yüklendi.
+info : +pz7gIPh5ydsBcQvivt4R98PwJXer86fyQBBToIBLxZ5kuhW4N13Ijz87s9WpuPtF1vh4JesYCgpDPAOgkMhdg== içerik karması ile Microsoft.Data.SqlClient 5.1.6, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.data.sqlclient\5.1.6 konumuna yüklendi.
+info : TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg== içerik karması ile System.Text.Json 4.7.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.text.json\4.7.2 konumuna yüklendi.
+info : WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A== içerik karması ile System.Security.Cryptography.Cng 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.cryptography.cng\4.5.0 konumuna yüklendi.
+info : hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A== içerik karması ile Microsoft.Win32.SystemEvents 6.0.0, C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\ konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.win32.systemevents\6.0.0 konumuna yüklendi.
+info : T/uuc7AklkDoxmcJ7LGkyX1CcSviZuLCa4jg3PekfJ7SU0niF0IVTXwUiNVP9DSpzou2PpxJ+eNY2IfDM90ZCg== içerik karması ile System.Security.Permissions 6.0.0, C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\ konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.permissions\6.0.0 konumuna yüklendi.
+info : nroMDjS7hNBPtkZqVBbSiQaQjWRDxITI8Y7XnDs97rqG3EbzVTNLZQf7bIeUJcaHOV8bca47s1Uxq94+2oGdxA== içerik karması ile Microsoft.Extensions.Logging.Abstractions 8.0.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.logging.abstractions\8.0.2 konumuna yüklendi.
+info : zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg== içerik karması ile System.Threading.Tasks.Extensions 4.5.4, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.threading.tasks.extensions\4.5.4 konumuna yüklendi.
+info : t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA== içerik karması ile System.Security.Principal.Windows 5.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.security.principal.windows\5.0.0 konumuna yüklendi.
+info : kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ== içerik karması ile Microsoft.CSharp 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.csharp\4.5.0 konumuna yüklendi.
+info : JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw== içerik karması ile System.Runtime 4.3.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.runtime\4.3.0 konumuna yüklendi.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/2026.06.29.11.58.22/vulnerability.update.json
+info : 'Microsoft.EntityFrameworkCore.SqlServer' paketi, 'DynamicFormBuilder.DataAccess/DynamicFormBuilder.DataAccess.csproj' projesinde belirtilen tüm çerçeveler ile uyumlu.
+info : 'Microsoft.EntityFrameworkCore.SqlServer' paketi sürüm '8.0.11' için PackageReference, 'C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\DynamicFormBuilder.DataAccess.csproj' dosyasına eklendi.
+info : MSBuild dosyası C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\obj\DynamicFormBuilder.DataAccess.csproj.nuget.g.props oluşturuluyor.
+info : MSBuild dosyası C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\obj\DynamicFormBuilder.DataAccess.csproj.nuget.g.targets oluşturuluyor.
+info : Varlıklar dosyası diske yazılıyor. Yol: C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\obj\project.assets.json
+log  : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\DynamicFormBuilder.DataAccess.csproj geri yüklendi (7,48 sn içinde).
+  Geri yüklenecek projeler belirleniyor...
+  Writing C:\Users\esra.baklaci\AppData\Local\Temp\tmplzisjr.tmp
+info : X.509 sertifika zinciri doğrulaması, kod imzalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : X.509 sertifika zinciri doğrulaması, zaman damgalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : 'DynamicFormBuilder.DataAccess/DynamicFormBuilder.DataAccess.csproj' projesine 'Microsoft.EntityFrameworkCore.Tools' paketi için PackageReference ekleniyor.
+info : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\DynamicFormBuilder.DataAccess.csproj için paketler geri yükleniyor...
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/8.0.11/microsoft.entityframeworkcore.tools.8.0.11.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.tools/8.0.11/microsoft.entityframeworkcore.tools.8.0.11.nupkg 395 ms
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/8.0.11/microsoft.entityframeworkcore.design.8.0.11.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.entityframeworkcore.design/8.0.11/microsoft.entityframeworkcore.design.8.0.11.nupkg 30 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp.workspaces/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/mono.texttemplating/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/humanizer.core/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/8.0.2/microsoft.extensions.dependencymodel.8.0.2.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencymodel/8.0.2/microsoft.extensions.dependencymodel.8.0.2.nupkg 129 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/humanizer.core/index.json 170 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp.workspaces/index.json 173 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp.workspaces/4.5.0/microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg 31 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp.workspaces/4.5.0/microsoft.codeanalysis.csharp.workspaces.4.5.0.nupkg 30 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/mono.texttemplating/index.json 272 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg 35 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.common/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.codedom/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/index.json 84 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.common/index.json 89 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/4.5.0/microsoft.codeanalysis.csharp.4.5.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.common/4.5.0/microsoft.codeanalysis.workspaces.common.4.5.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.workspaces.common/4.5.0/microsoft.codeanalysis.workspaces.common.4.5.0.nupkg 32 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.csharp/4.5.0/microsoft.codeanalysis.csharp.4.5.0.nupkg 37 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.codedom/index.json 157 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.codedom/4.4.0/system.codedom.4.4.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/index.json 172 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/4.5.0/microsoft.codeanalysis.common.4.5.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.codedom/4.4.0/system.codedom.4.4.0.nupkg 27 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.common/4.5.0/microsoft.codeanalysis.common.4.5.0.nupkg 42 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.analyzers/index.json
+info :   CACHE https://api.nuget.org/v3-flatcontainer/system.collections.immutable/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.analyzers/index.json 157 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/index.json 192 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/6.0.1/system.reflection.metadata.6.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg 250 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg 114 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/6.0.1/system.reflection.metadata.6.0.1.nupkg 119 ms
+info :   CACHE https://api.nuget.org/v3-flatcontainer/microsoft.bcl.asyncinterfaces/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.threading.channels/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg 25 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition/index.json 124 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/index.json 157 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.threading.channels/index.json 162 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition/6.0.0/system.composition.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.pipelines/6.0.3/system.io.pipelines.6.0.3.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition/6.0.0/system.composition.6.0.0.nupkg 27 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.pipelines/6.0.3/system.io.pipelines.6.0.3.nupkg 32 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg 33 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.attributedmodel/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.runtime/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.convention/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.hosting/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.typedparts/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.attributedmodel/index.json 120 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.runtime/index.json 121 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.convention/index.json 124 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.typedparts/index.json 155 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.hosting/index.json 178 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.attributedmodel/6.0.0/system.composition.attributedmodel.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.runtime/6.0.0/system.composition.runtime.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.convention/6.0.0/system.composition.convention.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.hosting/6.0.0/system.composition.hosting.6.0.0.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/system.composition.typedparts/6.0.0/system.composition.typedparts.6.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.attributedmodel/6.0.0/system.composition.attributedmodel.6.0.0.nupkg 26 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.convention/6.0.0/system.composition.convention.6.0.0.nupkg 26 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.runtime/6.0.0/system.composition.runtime.6.0.0.nupkg 35 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.typedparts/6.0.0/system.composition.typedparts.6.0.0.nupkg 31 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/system.composition.hosting/6.0.0/system.composition.hosting.6.0.0.nupkg 31 ms
+info : d7wMuKQtfsxUa7S13tITC8n1cQzewuhD5iDjZtK2prwFfKVzdYtgrTHgjaV03Zq7feGQ5gkP85tJJntXwInsJA== içerik karması ile System.Composition 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.composition\6.0.0 konumuna yüklendi.
+info : KxOvpbaKiUmbLvenr0T/4F1Vdm0Sq+iajLbesQK7/WKB/Dx+FQHCZ0f5jCXrVWK2QKF9eHzQ5JPA1L6hcb25FQ== içerik karması ile Microsoft.EntityFrameworkCore.Design 8.0.11, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.entityframeworkcore.design\8.0.11 konumuna yüklendi.
+info : qkRH/YBaMPTnzxrS5RDk1juvqed4A6HOD/CwRcDGyPpYps1J27waBddiiq1y93jk2ZZ9wuA/kynM+NO0kb3PKg== içerik karması ile System.Composition.Runtime 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.composition.runtime\6.0.0 konumuna yüklendi.
+info : XYi4lPRdu5bM4JVJ3/UIHAiG6V6lWWUlkhB9ab4IOq0FrRsp0F4wTyV4Dj+Ds+efoXJ3qbLqlvaUozDO7OLeXA== içerik karması ile System.Composition.Convention 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.composition.convention\6.0.0 konumuna yüklendi.
+info : III/lNMSn0ZRBuM9m5Cgbiho5j81u0FAEagFX5ta2DKbljZ3T0IpD8j+BIiHQPeKqJppWS9bGEp6JnKnWKze0g== içerik karması ile System.Reflection.Metadata 6.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.reflection.metadata\6.0.1 konumuna yüklendi.
+info : 9iUOj0npm2FxOkGIE3ktv0N0YU1oEhaMTJoDYuKS8dGNkWo1CPm7RjsoJABesKFk1lkCIfTE5SHXb45GIMjDnQ== içerik karması ile Microsoft.EntityFrameworkCore.Tools 8.0.11, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.entityframeworkcore.tools\8.0.11 konumuna yüklendi.
+info : l4zZJ1WU2hqpQQHXz1rvC3etVZN+2DLmQMO79FhOTZHMn8tDRr+WU287sbomD0BETlmKDn0ygUgVy9k5xkkJdA== içerik karması ile System.Collections.Immutable 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.collections.immutable\6.0.0 konumuna yüklendi.
+info : iUR1eHrL8Cwd82neQCJ00MpwNIBs4NZgXzrPqx8NJf/k4+mwBO0XCRmHYJT4OLSwDDqh5nBLJWkz5cROnrGhRA== içerik karması ile System.Composition.TypedParts 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.composition.typedparts\6.0.0 konumuna yüklendi.
+info : w/wXjj7kvxuHPLdzZ0PAUt++qJl03t7lENmb2Oev0n3zbxyNULbWBlnd5J5WUMMv15kg5o+/TCZFb6lSwfaUUQ== içerik karması ile System.Composition.Hosting 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.composition.hosting\6.0.0 konumuna yüklendi.
+info : ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw== içerik karması ile System.IO.Pipelines 6.0.3, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.io.pipelines\6.0.3 konumuna yüklendi.
+info : mUBDZZRgZrSyFOsJ2qJJ9fXfqd/kXJwf3AiDoqLD9m6TjY5OO/vLNOb9fb4juC0487eq4hcGN/M2Rh/CKS7QYw== içerik karması ile Microsoft.Extensions.DependencyModel 8.0.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.extensions.dependencymodel\8.0.2 konumuna yüklendi.
+info : WK1nSDLByK/4VoC7fkNiFuTVEiperuCN/Hyn+VN30R+W2ijO1d0Z2Qm0ScEl9xkSn1G2MyapJi8xpf4R8WRa/w== içerik karması ile System.Composition.AttributedModel 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.composition.attributedmodel\6.0.0 konumuna yüklendi.
+info : KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ== içerik karması ile Mono.TextTemplating 2.2.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\mono.texttemplating\2.2.1 konumuna yüklendi.
+info : UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg== içerik karması ile Microsoft.Bcl.AsyncInterfaces 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.bcl.asyncinterfaces\6.0.0 konumuna yüklendi.
+info : TY8/9+tI0mNaUMgntOxxaq2ndTkdXqLSxvPmas7XEqOlv9lQtB7wLjYGd756lOaO7Dvb5r/WXhluM+0Xe87v5Q== içerik karması ile System.Threading.Channels 6.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.threading.channels\6.0.0 konumuna yüklendi.
+info : 2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA== içerik karması ile System.CodeDom 4.4.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.codedom\4.4.0 konumuna yüklendi.
+info : l4dDRmGELXG72XZaonnOeORyD/T5RpEu5LGHOUIhnv+MmUWDY/m1kWXGwtcgQ5CJ5ynkFiRnIYzTKXYjUs7rbw== içerik karması ile Microsoft.CodeAnalysis.Workspaces.Common 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.codeanalysis.workspaces.common\4.5.0 konumuna yüklendi.
+info : h74wTpmGOp4yS4hj+EvNzEiPgg/KVs2wmSfTZ81upJZOtPkJsVkgfsgtxxqmAeapjT/vLKfmYV0bS8n5MNVP+g== içerik karması ile Microsoft.CodeAnalysis.CSharp.Workspaces 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.codeanalysis.csharp.workspaces\4.5.0 konumuna yüklendi.
+info : lwAbIZNdnY0SUNoDmZHkVUwLO8UyNnyyh1t/4XsbFxi4Ounb3xszIYZaWhyj5ZjyfcwqwmtMbE7fUTVCqQEIdQ== içerik karması ile Microsoft.CodeAnalysis.Common 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.codeanalysis.common\4.5.0 konumuna yüklendi.
+info : cM59oMKAOxvdv76bdmaKPy5hfj+oR+zxikWoueEB7CwTko7mt9sVKZI8Qxlov0C/LuKEG+WQwifepqL3vuTiBQ== içerik karması ile Microsoft.CodeAnalysis.CSharp 4.5.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.codeanalysis.csharp\4.5.0 konumuna yüklendi.
+info : lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw== içerik karması ile Humanizer.Core 2.14.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\humanizer.core\2.14.1 konumuna yüklendi.
+info : j/rOZtLMVJjrfLRlAMckJLPW/1rze9MT1yfWqSIbUPGRu1m1P0fuo9PmqapwsmePfGB5PJrudQLvmUOAMF0DqQ== içerik karması ile Microsoft.CodeAnalysis.Analyzers 3.3.3, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\microsoft.codeanalysis.analyzers\3.3.3 konumuna yüklendi.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/2026.06.29.11.58.22/vulnerability.update.json
+info : 'Microsoft.EntityFrameworkCore.Tools' paketi, 'DynamicFormBuilder.DataAccess/DynamicFormBuilder.DataAccess.csproj' projesinde belirtilen tüm çerçeveler ile uyumlu.
+info : 'Microsoft.EntityFrameworkCore.Tools' paketi sürüm '8.0.11' için PackageReference, 'C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\DynamicFormBuilder.DataAccess.csproj' dosyasına eklendi.
+info : MSBuild dosyası C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\obj\DynamicFormBuilder.DataAccess.csproj.nuget.g.props oluşturuluyor.
+info : Varlıklar dosyası diske yazılıyor. Yol: C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\obj\project.assets.json
+log  : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.DataAccess\DynamicFormBuilder.DataAccess.csproj geri yüklendi (5,08 sn içinde).
+  Geri yüklenecek projeler belirleniyor...
+  Writing C:\Users\esra.baklaci\AppData\Local\Temp\tmpibbk5z.tmp
+info : X.509 sertifika zinciri doğrulaması, kod imzalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : X.509 sertifika zinciri doğrulaması, zaman damgalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : 'DynamicFormBuilder.WebUI/DynamicFormBuilder.WebUI.csproj' projesine 'Microsoft.EntityFrameworkCore.Design' paketi için PackageReference ekleniyor.
+info : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.WebUI\DynamicFormBuilder.WebUI.csproj için paketler geri yükleniyor...
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/2026.06.29.11.58.22/vulnerability.update.json
+info : 'Microsoft.EntityFrameworkCore.Design' paketi, 'DynamicFormBuilder.WebUI/DynamicFormBuilder.WebUI.csproj' projesinde belirtilen tüm çerçeveler ile uyumlu.
+info : 'Microsoft.EntityFrameworkCore.Design' paketi sürüm '8.0.11' için PackageReference, 'C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.WebUI\DynamicFormBuilder.WebUI.csproj' dosyasına eklendi.
+info : MSBuild dosyası C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.WebUI\obj\DynamicFormBuilder.WebUI.csproj.nuget.g.props oluşturuluyor.
+info : MSBuild dosyası C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.WebUI\obj\DynamicFormBuilder.WebUI.csproj.nuget.g.targets oluşturuluyor.
+info : Varlıklar dosyası diske yazılıyor. Yol: C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.WebUI\obj\project.assets.json
+log  : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.WebUI\DynamicFormBuilder.WebUI.csproj geri yüklendi (732 ms içinde).
+  Geri yüklenecek projeler belirleniyor...
+  Writing C:\Users\esra.baklaci\AppData\Local\Temp\tmpq0poby.tmp
+info : X.509 sertifika zinciri doğrulaması, kod imzalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : X.509 sertifika zinciri doğrulaması, zaman damgalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+info : 'DynamicFormBuilder.Business/DynamicFormBuilder.Business.csproj' projesine 'ClosedXML' paketi için PackageReference ekleniyor.
+info : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.Business\DynamicFormBuilder.Business.csproj için paketler geri yükleniyor...
+info :   GET https://api.nuget.org/v3-flatcontainer/closedxml/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/closedxml/index.json 471 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/closedxml/0.104.2/closedxml.0.104.2.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/closedxml/0.104.2/closedxml.0.104.2.nupkg 227 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/documentformat.openxml/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/closedxml.parser/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/sixlabors.fonts/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/excelnumberformat/index.json
+info :   GET https://api.nuget.org/v3-flatcontainer/rbush/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/documentformat.openxml/index.json 262 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/closedxml.parser/index.json 308 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/documentformat.openxml/3.1.1/documentformat.openxml.3.1.1.nupkg
+info :   GET https://api.nuget.org/v3-flatcontainer/closedxml.parser/1.2.0/closedxml.parser.1.2.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/sixlabors.fonts/index.json 347 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/documentformat.openxml/3.1.1/documentformat.openxml.3.1.1.nupkg 29 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/sixlabors.fonts/1.0.0/sixlabors.fonts.1.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/closedxml.parser/1.2.0/closedxml.parser.1.2.0.nupkg 45 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/rbush/index.json 373 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/rbush/4.0.0/rbush.4.0.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/excelnumberformat/index.json 386 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/excelnumberformat/1.1.0/excelnumberformat.1.1.0.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/rbush/4.0.0/rbush.4.0.0.nupkg 29 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/sixlabors.fonts/1.0.0/sixlabors.fonts.1.0.0.nupkg 50 ms
+info :   OK https://api.nuget.org/v3-flatcontainer/excelnumberformat/1.1.0/excelnumberformat.1.1.0.nupkg 50 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/documentformat.openxml.framework/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/documentformat.openxml.framework/index.json 231 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/documentformat.openxml.framework/3.1.1/documentformat.openxml.framework.3.1.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/documentformat.openxml.framework/3.1.1/documentformat.openxml.framework.3.1.1.nupkg 36 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.packaging/index.json
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.packaging/index.json 129 ms
+info :   GET https://api.nuget.org/v3-flatcontainer/system.io.packaging/8.0.1/system.io.packaging.8.0.1.nupkg
+info :   OK https://api.nuget.org/v3-flatcontainer/system.io.packaging/8.0.1/system.io.packaging.8.0.1.nupkg 28 ms
+info : R3BVHPs9O+RkExbZYTGT0+9HLbi8ZrNij1Yziyw6znd3J7P3uoIR07uwTLGOogtz1p6+0sna66eBoXu7tBiVQA== içerik karması ile ExcelNumberFormat 1.1.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\excelnumberformat\1.1.0 konumuna yüklendi.
+info : KYkIOAvPexQOLDxPO2g0BVoWInnQhPpkFzRqvNrNrMhVT6kqhVr0zEb6KCHlptLFukxnZrjuMVAnxK7pOGUYrw== içerik karması ile System.IO.Packaging 8.0.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\system.io.packaging\8.0.1 konumuna yüklendi.
+info : j3GeRxxLUQdc+UrZnvythdQxi3bd8ayn87VDjfGXrvfodF550n9wR6SgQvpo+YiAv3GJezsu6lK0l47rRqnbdg== içerik karması ile RBush 4.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\rbush\4.0.0 konumuna yüklendi.
+info : w+/0tsxABS3lkSH8EUlA7IGme+mq5T/Puf3DbOiTckmSuUpAUO2LK29oXYByCcWkBv6wcRHxgWlQb1lxkwI0Tw== içerik karması ile ClosedXML.Parser 1.2.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\closedxml.parser\1.2.0 konumuna yüklendi.
+info : gOkSjQ152MhpKmw70cBkJV+FnaZAWzDwM36luRf/7FlWYnNeH++9XYdGTd0Y4KQlVPkKVxy948M5MMsnsGC4GQ== içerik karması ile ClosedXML 0.104.2, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\closedxml\0.104.2 konumuna yüklendi.
+info : LFQsCZlV0xlUyXAOMUo5kkSl+8zAQXXbbdwWchtk0B4o7zotZhQsQOcJUELGHdfPfm/xDAsz6hONAuV25bJaAg== içerik karması ile SixLabors.Fonts 1.0.0, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\sixlabors.fonts\1.0.0 konumuna yüklendi.
+info : 6APEp/ElZV58S/4v8mf4Ke3ONEDORs64MqdD64Z7wWpcHANB9oovQsGIwtqjnKihulOj7T0a6IxHIHOfMqKOng== içerik karması ile DocumentFormat.OpenXml.Framework 3.1.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\documentformat.openxml.framework\3.1.1 konumuna yüklendi.
+info : 2z9QBzeTLNNKWM9SaOSDMegfQk/7hDuElOsmF77pKZMkFRP/GHA/W/4yOAQD9kn15N/FsFxHn3QVYkatuZghiA== içerik karması ile DocumentFormat.OpenXml 3.1.1, https://api.nuget.org/v3/index.json konumundan C:\Users\esra.baklaci\AppData\Local\Temp\cursor-sandbox-cache\9012fe8427d719a919c6a9dd2db50e0b\nuget\documentformat.openxml\3.1.1 konumuna yüklendi.
+info :   CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/vulnerability.base.json
+info :   CACHE https://api.nuget.org/v3-vulnerabilities/2026.06.26.23.58.15/2026.06.29.11.58.22/vulnerability.update.json
+info : 'ClosedXML' paketi, 'DynamicFormBuilder.Business/DynamicFormBuilder.Business.csproj' projesinde belirtilen tüm çerçeveler ile uyumlu.
+info : 'ClosedXML' paketi sürüm '0.104.2' için PackageReference, 'C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.Business\DynamicFormBuilder.Business.csproj' dosyasına eklendi.
+info : MSBuild dosyası C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.Business\obj\DynamicFormBuilder.Business.csproj.nuget.g.props oluşturuluyor.
+info : MSBuild dosyası C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.Business\obj\DynamicFormBuilder.Business.csproj.nuget.g.targets oluşturuluyor.
+info : Varlıklar dosyası diske yazılıyor. Yol: C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.Business\obj\project.assets.json
+log  : C:\Users\esra.baklaci\.cursor\projects\C-Users-ESRA-1-BAK-AppData-Local-Temp-9f8a329d-c704-4a0b-9a48-6db9ed2a6bc3\DynamicFormBuilder.Business\DynamicFormBuilder.Business.csproj geri yüklendi (5,05 sn içinde).

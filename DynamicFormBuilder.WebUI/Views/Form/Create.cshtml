@@ -1,0 +1,80 @@
+@model DynamicFormBuilder.Business.Models.FormEditDto
+@{
+    ViewData["Title"] = "Yeni Form";
+    var templates = new[] {
+        ("contact", "bi-envelope-heart", "İletişim Formu", "#6b8cff"),
+        ("job", "bi-briefcase", "İş Başvurusu", "#8b5cf6"),
+        ("event", "bi-calendar-event", "Etkinlik Kaydı", "#ec4899"),
+        ("survey", "bi-star-half", "Müşteri Memnuniyeti", "#f59e0b"),
+        ("registration", "bi-person-plus", "Kayıt Formu", "#10b981")
+    };
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-9">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="templateId" id="templateId" value="" />
+
+            <div class="card app-card mb-4">
+                <div class="card-header"><i class="bi bi-layout-text-window me-2"></i>Hazır Şablon Seçin (İsteğe Bağlı)</div>
+                <div class="card-body">
+                    <p class="text-muted mb-3">Boş form yerine hazır bir şablonla başlayabilirsiniz.</p>
+                    <div class="row g-3" id="templateCards">
+                        <div class="col-md-4">
+                            <div class="template-card selected" data-template="">
+                                <i class="bi bi-file-earmark"></i>
+                                <span>Boş Form</span>
+                            </div>
+                        </div>
+                        @foreach (var (id, icon, name, color) in templates)
+                        {
+                            <div class="col-md-4">
+                                <div class="template-card" data-template="@id" style="--tpl-color:@color;">
+                                    <i class="bi @icon"></i>
+                                    <span>@name</span>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+
+            <div class="card app-card">
+                <div class="card-header">Yeni Form Oluştur</div>
+                <div class="card-body">
+                    <partial name="_FormEditPartial" model="Model" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.querySelectorAll('.template-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.template-card').forEach(c => c.classList.remove('selected'));
+                card.classList.add('selected');
+                document.getElementById('templateId').value = card.dataset.template || '';
+            });
+        });
+    </script>
+}
+
+<style>
+    .template-card {
+        border: 2px solid #dce4f5;
+        border-radius: 16px;
+        padding: 1.25rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        background: linear-gradient(145deg, #fafbff, #f5f7ff);
+    }
+    .template-card i { font-size: 2rem; color: var(--tpl-color, #6b8cff); display: block; margin-bottom: 0.5rem; }
+    .template-card span { font-weight: 600; font-size: 1rem; color: #475569; }
+    .template-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(107,140,255,0.15); border-color: #b8c8f5; }
+    .template-card.selected { border-color: var(--tpl-color, #6b8cff); background: linear-gradient(145deg, #f0f4ff, #e8edff); box-shadow: 0 8px 24px rgba(107,140,255,0.2); }
+</style>

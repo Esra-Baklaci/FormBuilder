@@ -1,0 +1,181 @@
+@model DynamicFormBuilder.Business.Models.FormDetailDto
+@{
+    ViewData["Title"] = "Form Builder - " + Model.Title;
+    Layout = null;
+    var templateParam = Context.Request.Query["template"].ToString();
+
+    var fieldGroups = new (string Id, string Title, (int Type, string Icon, string Label)[] Items)[]
+    {
+        ("basic", "Temel Alanlar", new[] {
+            (1, "bi-input-cursor-text", "Textbox"), (2, "bi-textarea-t", "Textarea"), (3, "bi-123", "Number"),
+            (4, "bi-envelope", "Email"), (5, "bi-telephone", "Phone"), (6, "bi-calendar-date", "Date"),
+            (7, "bi-clock", "Time"), (8, "bi-key", "Password"), (9, "bi-eye-slash", "Hidden Field")
+        }),
+        ("choice", "Seçim Alanları", new[] {
+            (10, "bi-menu-button-wide", "Dropdown"), (11, "bi-record-circle", "Radio Button"),
+            (12, "bi-check-square", "Checkbox"), (13, "bi-ui-checks", "Multi Select")
+        }),
+        ("advanced", "Gelişmiş Alanlar", new[] {
+            (14, "bi-file-earmark-arrow-up", "File Upload"), (15, "bi-image", "Image Upload"),
+            (16, "bi-pen", "Signature"), (17, "bi-star", "Rating"), (18, "bi-sliders", "Slider")
+        }),
+        ("layout", "Düzen Alanları", new[] {
+            (19, "bi-type-h1", "Heading"), (20, "bi-text-paragraph", "Paragraph"), (21, "bi-hr", "Divider"),
+            (22, "bi-distribute-vertical", "Spacer"), (23, "bi-card-image", "Image"), (24, "bi-code-slash", "HTML Block")
+        })
+    };
+
+    var templates = new[] {
+        ("contact", "bi-envelope-heart", "İletişim", "#6b8cff"),
+        ("job", "bi-briefcase", "İş Başvurusu", "#8b5cf6"),
+        ("event", "bi-calendar-event", "Etkinlik", "#ec4899"),
+        ("survey", "bi-star-half", "Anket", "#f59e0b"),
+        ("registration", "bi-person-plus", "Kayıt", "#10b981")
+    };
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/form-builder.css" asp-append-version="true" />
+</head>
+<body class="builder-body">
+    <nav class="navbar builder-navbar px-3">
+        <span class="navbar-brand mb-0"><i class="bi bi-bricks me-2" style="color:#6b8cff;"></i>@Model.Title</span>
+        <div class="d-flex gap-2">
+            <a asp-controller="Form" asp-action="Preview" asp-route-id="@Model.Id" class="btn btn-fb btn-fb-outline btn-sm">Önizleme</a>
+            <a asp-controller="Form" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-fb btn-fb-outline btn-sm">Form Ayarları</a>
+            <button type="button" id="btnSave" class="btn btn-fb btn-fb-success btn-sm"><i class="bi bi-save me-1"></i>Kaydet</button>
+        </div>
+    </nav>
+
+    <div class="builder-container">
+        <aside class="builder-sidebar">
+            <input type="text" id="fieldSearch" class="field-search w-100" placeholder="Alan ara..." />
+
+            <div class="library-accordion" id="libraryAccordion">
+                <div class="library-section">
+                    <button class="library-section-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#secTemplates" aria-expanded="true">
+                        <span><i class="bi bi-layout-text-window me-2"></i>Hazır Şablonlar</span>
+                        <span class="section-badge">@templates.Length</span>
+                        <i class="bi bi-chevron-down section-chevron"></i>
+                    </button>
+                    <div class="collapse show" id="secTemplates">
+                        <div class="template-grid">
+                            @foreach (var (id, icon, name, color) in templates)
+                            {
+                                <button type="button" class="template-item" data-template-id="@id" style="--tpl-color:@color;">
+                                    <i class="bi @icon"></i>
+                                    <span>@name</span>
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </div>
+
+                @foreach (var (groupId, title, items) in fieldGroups)
+                {
+                    var secId = $"sec{char.ToUpper(groupId[0])}{groupId[1..]}";
+                    var isOpen = groupId == "basic";
+                    <div class="library-section">
+                        <button class="library-section-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#@secId" aria-expanded="@isOpen.ToString().ToLower()">
+                            <span>@title</span>
+                            <span class="section-badge">@items.Length</span>
+                            <i class="bi bi-chevron-down section-chevron"></i>
+                        </button>
+                        <div class="collapse @(isOpen ? "show" : "")" id="@secId">
+                            <div class="field-library" data-group="@groupId">
+                                @foreach (var (type, icon, label) in items)
+                                {
+                                    <div class="library-item" data-field-type="@type" draggable="true" title="Tıkla veya sürükle">
+                                        <span class="lib-icon"><i class="bi @icon"></i></span>
+                                        <span class="lib-label">@label</span>
+                                        <span class="lib-add" role="button" tabindex="-1" title="Ekle">+</span>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <p class="text-muted small mt-3 mb-0"><i class="bi bi-info-circle me-1"></i>Bölümleri açıp kapatarak araçları görün.</p>
+        </aside>
+
+        <main class="builder-canvas-wrapper">
+            <div id="canvasBrandPreview" class="canvas-brand-preview" style="--form-primary:@Model.PrimaryColor;--form-bg:@Model.BackgroundColor;--form-btn:@Model.ButtonColor;">
+                @if (!string.IsNullOrWhiteSpace(Model.LogoUrl))
+                {
+                    <img src="@Model.LogoUrl" alt="Logo" class="canvas-brand-logo" />
+                }
+                <div>
+                    <div class="canvas-brand-title">@Model.Title</div>
+                    @if (!string.IsNullOrWhiteSpace(Model.Description))
+                    {
+                        <div class="canvas-brand-desc">@Model.Description</div>
+                    }
+                </div>
+                <a asp-controller="Form" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-fb btn-fb-soft btn-sm ms-auto">Renk & Logo</a>
+            </div>
+            <div id="formCanvas" class="form-canvas">
+                <div class="canvas-placeholder text-muted" id="canvasPlaceholder">
+                    <i class="bi bi-arrow-left-circle"></i>
+                    Soldan şablon veya alan seçin
+                </div>
+            </div>
+        </main>
+
+        <aside class="builder-properties">
+            <h6 class="sidebar-title">Alan Ayarları</h6>
+            <div id="propertiesPanel" class="properties-panel">
+                <p class="text-muted small">Düzenlemek için bir alan seçin.</p>
+            </div>
+
+            <hr class="my-3" style="border-color:#e8edf3;" />
+            <h6 class="sidebar-title">Koşullu Mantık</h6>
+            <div id="conditionalLogicPanel">
+                <button type="button" class="btn btn-fb btn-fb-soft btn-sm w-100 mb-2" id="btnAddLogic">
+                    <i class="bi bi-plus-circle me-1"></i>Kural Ekle
+                </button>
+                <div id="logicList"></div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="modal fade app-modal" id="saveModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body text-center pt-0 pb-4">
+                    <i id="saveModalIcon" class="bi bi-check-circle-fill text-success" style="font-size:3rem;"></i>
+                    <h5 id="saveModalTitle" class="mt-3 mb-2">Kaydedildi</h5>
+                    <p id="saveModalMessage" class="text-muted mb-0">Form başarıyla kaydedildi.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center pt-0 pb-4">
+                    <button type="button" id="saveModalBtn" class="btn btn-fb btn-fb-primary px-4">Form Listesine Git</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.formBuilderConfig = {
+            formId: @Model.Id,
+            saveUrl: '@Url.Action("Save", "FormBuilder")',
+            formsListUrl: '@Url.Action("Index", "Form")',
+            templateFromUrl: '@templateParam',
+            initialData: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model, new System.Text.Json.JsonSerializerOptions { PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase }))
+        };
+    </script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+    <script src="~/js/form-templates.js" asp-append-version="true"></script>
+    <script src="~/js/form-builder.js" asp-append-version="true"></script>
+</body>
+</html>

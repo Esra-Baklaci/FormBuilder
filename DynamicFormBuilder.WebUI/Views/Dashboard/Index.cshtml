@@ -1,0 +1,89 @@
+@model DynamicFormBuilder.Business.Models.DashboardDto
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="app-page-title">Dashboard</h1>
+        <p class="app-page-subtitle">Form ve yanıt özetiniz</p>
+    </div>
+    <a asp-controller="Form" asp-action="Create" class="btn btn-fb btn-fb-primary">
+        <i class="bi bi-plus-lg me-1"></i>Yeni Form
+    </a>
+</div>
+
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="card stat-card app-card border-0">
+            <div class="card-body">
+                <div class="text-muted mb-1" style="font-size:1rem;">Toplam Form</div>
+                <div class="display-6 fw-bold">@Model.TotalForms</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card stat-card app-card border-0">
+            <div class="card-body">
+                <div class="text-muted mb-1" style="font-size:1rem;">Aktif Form</div>
+                <div class="display-6 fw-bold" style="color:#059669;">@Model.ActiveForms</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card stat-card app-card border-0">
+            <div class="card-body">
+                <div class="text-muted mb-1" style="font-size:1rem;">Toplam Yanıt</div>
+                <div class="display-6 fw-bold" style="color:#6b8cff;">@Model.TotalResponses</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-6">
+        <div class="card app-card h-100">
+            <div class="card-header">Son Oluşturulan Formlar</div>
+            <div class="list-group list-group-flush">
+                @if (!Model.RecentForms.Any())
+                {
+                    <div class="list-group-item text-muted py-4">Henüz form yok.</div>
+                }
+                @foreach (var form in Model.RecentForms)
+                {
+                    <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <div>
+                            <div class="fw-semibold" style="font-size:1.05rem;">@form.Title</div>
+                            <small class="text-muted">@form.CreatedAt.ToLocalTime().ToString("g")</small>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a asp-controller="FormBuilder" asp-action="Index" asp-route-id="@form.Id" class="btn btn-fb btn-fb-soft btn-sm">Builder</a>
+                            <a asp-controller="Form" asp-action="Edit" asp-route-id="@form.Id" class="btn btn-fb btn-fb-outline btn-sm">Düzenle</a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card app-card h-100">
+            <div class="card-header">Son Gelen Yanıtlar</div>
+            <div class="list-group list-group-flush">
+                @if (!Model.RecentResponses.Any())
+                {
+                    <div class="list-group-item text-muted py-4">Henüz yanıt yok.</div>
+                }
+                @foreach (var response in Model.RecentResponses)
+                {
+                    <div class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <div>
+                            <div class="fw-semibold" style="font-size:1.05rem;">@response.FormTitle</div>
+                            <small class="text-muted">@response.SubmittedAt.ToLocalTime().ToString("g")</small>
+                        </div>
+                        <a asp-controller="Response" asp-action="Detail" asp-route-id="@response.Id" class="btn btn-fb btn-fb-soft btn-sm">Detay</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

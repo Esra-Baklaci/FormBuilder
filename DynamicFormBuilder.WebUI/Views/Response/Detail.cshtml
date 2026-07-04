@@ -1,0 +1,45 @@
+@model DynamicFormBuilder.Business.Models.ResponseDetailDto
+@{
+    ViewData["Title"] = "Yanıt Detayı #" + Model.Id;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="h4 mb-1">Yanıt Detayı #@Model.Id</h1>
+        <p class="text-muted mb-0">@Model.FormTitle — @Model.SubmittedAt.ToLocalTime().ToString("g")</p>
+    </div>
+    <div class="btn-group">
+        <a asp-action="ExportPdf" asp-route-id="@Model.Id" class="btn btn-outline-secondary btn-sm">PDF Export</a>
+        <a asp-action="Index" asp-route-formId="@Model.FormId" class="btn btn-outline-primary btn-sm">Listeye Dön</a>
+    </div>
+</div>
+
+<div class="card shadow-sm border-0">
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-sm-3">IP Adresi</dt>
+            <dd class="col-sm-9">@(Model.IpAddress ?? "-")</dd>
+        </dl>
+        <hr />
+        @foreach (var value in Model.Values)
+        {
+            <div class="mb-3">
+                <div class="fw-semibold">@value.FieldLabel</div>
+                <div class="text-muted">
+                    @if (value.FieldType == DynamicFormBuilder.Entity.Enums.FieldType.ImageUpload && !string.IsNullOrWhiteSpace(value.Value))
+                    {
+                        <img src="@value.Value" alt="@value.FieldLabel" class="img-thumbnail" style="max-height: 120px;" />
+                    }
+                    else if (value.FieldType == DynamicFormBuilder.Entity.Enums.FieldType.FileUpload && !string.IsNullOrWhiteSpace(value.Value))
+                    {
+                        <a href="@value.Value" target="_blank">@value.Value</a>
+                    }
+                    else
+                    {
+                        @(string.IsNullOrWhiteSpace(value.Value) ? "-" : value.Value)
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>

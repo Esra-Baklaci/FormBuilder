@@ -1,0 +1,111 @@
+@model DynamicFormBuilder.Business.Models.FormEditDto
+
+<div class="form-edit-fields">
+    @if (Model.Id > 0)
+    {
+        <input type="hidden" asp-for="Id" />
+    }
+    <input type="hidden" asp-for="LogoUrl" />
+
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label">Başlık</label>
+        <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Açıklama</label>
+        <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Slug" class="form-label">Slug (URL)</label>
+        <input asp-for="Slug" class="form-control" placeholder="otomatik oluşturulur" />
+        <div class="form-text">Public URL: /PublicForm/Fill/{slug}</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label asp-for="Theme" class="form-label">Tema</label>
+            <select asp-for="Theme" class="form-select" asp-items="Html.GetEnumSelectList<DynamicFormBuilder.Entity.Enums.FormTheme>()"></select>
+        </div>
+        <div class="col-md-6 mb-3 d-flex align-items-end">
+            <div class="form-check">
+                <input asp-for="IsActive" class="form-check-input" />
+                <label asp-for="IsActive" class="form-check-label">Aktif</label>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+    <h6 class="fw-bold mb-3"><i class="bi bi-palette me-2" style="color:#6b8cff;"></i>Form Görünümü</h6>
+
+    <div class="row g-3 mb-3">
+        <div class="col-md-4">
+            <label asp-for="PrimaryColor" class="form-label">Ana Renk</label>
+            <div class="d-flex gap-2 align-items-center">
+                <input type="color" class="form-control form-control-color" value="@Model.PrimaryColor" oninput="document.getElementById('PrimaryColor').value=this.value" />
+                <input asp-for="PrimaryColor" class="form-control form-control-sm color-text" id="PrimaryColor" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label asp-for="BackgroundColor" class="form-label">Arka Plan</label>
+            <div class="d-flex gap-2 align-items-center">
+                <input type="color" class="form-control form-control-color" value="@Model.BackgroundColor" oninput="document.getElementById('BackgroundColor').value=this.value" />
+                <input asp-for="BackgroundColor" class="form-control form-control-sm color-text" id="BackgroundColor" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <label asp-for="ButtonColor" class="form-label">Buton Rengi</label>
+            <div class="d-flex gap-2 align-items-center">
+                <input type="color" class="form-control form-control-color" value="@Model.ButtonColor" oninput="document.getElementById('ButtonColor').value=this.value" />
+                <input asp-for="ButtonColor" class="form-control form-control-sm color-text" id="ButtonColor" />
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Logo</label>
+        @if (!string.IsNullOrWhiteSpace(Model.LogoUrl))
+        {
+            <div class="mb-2">
+                <img src="@Model.LogoUrl" alt="Logo" style="max-height:60px; border-radius:10px; border:1px solid #dce4f5; padding:4px;" />
+            </div>
+        }
+        <input type="file" name="logoFile" class="form-control" accept="image/*" />
+        <div class="form-text">PNG, JPG veya SVG — max 2MB</div>
+    </div>
+
+    <hr />
+    <h6 class="fw-bold mb-3">E-posta Bildirimi</h6>
+    <div class="form-check mb-2">
+        <input asp-for="EmailNotificationEnabled" class="form-check-input" />
+        <label asp-for="EmailNotificationEnabled" class="form-check-label">Form gönderildiğinde e-posta gönder</label>
+    </div>
+    <div class="mb-3">
+        <label asp-for="NotificationEmail" class="form-label">Bildirim E-postası</label>
+        <input asp-for="NotificationEmail" class="form-control" type="email" />
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-fb btn-fb-primary">Kaydet</button>
+        <a asp-action="Index" class="btn btn-fb btn-fb-outline">İptal</a>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('input[type="color"]').forEach(picker => {
+        picker.addEventListener('input', () => {
+            const text = picker.parentElement.querySelector('.color-text') || picker.parentElement.querySelector('input[type="text"]');
+            if (text) text.value = picker.value;
+        });
+    });
+    document.querySelectorAll('.color-text').forEach(text => {
+        text.addEventListener('input', () => {
+            const picker = text.parentElement.querySelector('input[type="color"]');
+            if (picker && /^#[0-9A-Fa-f]{6}$/.test(text.value)) picker.value = text.value;
+        });
+    });
+</script>

@@ -1,0 +1,59 @@
+@model DynamicFormBuilder.Business.Models.FormEditDto
+@{
+    ViewData["Title"] = "Form Düzenle";
+    var publicUrl = ViewBag.PublicUrl as string;
+    var isPublished = ViewBag.IsPublished as bool? ?? false;
+}
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card app-card mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <span>Form Düzenle</span>
+                <div class="d-flex gap-2">
+                    <a asp-controller="FormBuilder" asp-action="Index" asp-route-id="@Model.Id" class="btn btn-fb btn-fb-primary btn-sm">Form Builder</a>
+                    <a asp-action="Preview" asp-route-id="@Model.Id" class="btn btn-fb btn-fb-outline btn-sm">Önizleme</a>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <partial name="_FormEditPartial" model="Model" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card app-card">
+            <div class="card-header">Yayınlama</div>
+            <div class="card-body">
+                @if (isPublished)
+                {
+                    <span class="badge badge-soft-success rounded-pill mb-2">Yayında</span>
+                    <p class="text-muted mb-2">Public link:</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" value="@publicUrl" id="publicUrl" readonly />
+                        <button class="btn btn-fb btn-fb-outline" type="button" onclick="navigator.clipboard.writeText('@publicUrl')">Kopyala</button>
+                    </div>
+                    <form asp-action="Unpublish" asp-route-id="@Model.Id" method="post">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-fb btn-fb-outline w-100">Yayından Kaldır</button>
+                    </form>
+                }
+                else
+                {
+                    <span class="badge badge-soft-secondary rounded-pill mb-2">Taslak</span>
+                    <p class="text-muted mb-3">Formu yayınladığınızda public link oluşturulur.</p>
+                    <form asp-action="Publish" asp-route-id="@Model.Id" method="post">
+                        @Html.AntiForgeryToken()
+                        <button type="submit" class="btn btn-fb btn-fb-primary w-100">Yayınla</button>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

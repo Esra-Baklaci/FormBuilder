@@ -1,0 +1,38 @@
+@model DynamicFormBuilder.Business.Models.FormDetailDto
+@{
+    ViewData["Title"] = Model.Title;
+    Layout = "_PublicLayout";
+    var themeClass = Model.Theme switch
+    {
+        DynamicFormBuilder.Entity.Enums.FormTheme.Dark => "theme-dark",
+        DynamicFormBuilder.Entity.Enums.FormTheme.Rounded => "theme-rounded",
+        DynamicFormBuilder.Entity.Enums.FormTheme.Flat => "theme-flat",
+        _ => "theme-light"
+    };
+    var brandStyle = $"--form-primary:{Model.PrimaryColor};--form-bg:{Model.BackgroundColor};--form-btn:{Model.ButtonColor};";
+}
+
+<div class="public-form-card form-branded @themeClass" style="@brandStyle">
+    <partial name="_FormBrandHeader" model="Model" />
+
+    <form asp-action="Fill" asp-route-slug="@Model.Slug" method="post" enctype="multipart/form-data" id="publicForm" class="dynamic-form" novalidate>
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger mb-3 form-grid-full"></div>
+
+        @foreach (var field in Model.Fields.OrderBy(f => f.SortOrder))
+        {
+            <partial name="_FieldRender" model="field" />
+        }
+
+        <div class="form-grid-full">
+            <button type="submit" class="btn btn-fb btn-fb-primary form-brand-btn btn-lg mt-3">Gönder</button>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        window.conditionalLogics = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.ConditionalLogics, new System.Text.Json.JsonSerializerOptions { PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase }));
+    </script>
+    <script src="~/js/conditional-logic.js" asp-append-version="true"></script>
+}

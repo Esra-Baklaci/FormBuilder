@@ -1,0 +1,174 @@
+@model DynamicFormBuilder.Business.Models.FormFieldDto
+@using DynamicFormBuilder.Entity.Enums
+@{
+    if (Model.IsHidden && Model.FieldType != FieldType.HiddenField)
+    {
+        return;
+    }
+
+    var options = string.IsNullOrWhiteSpace(Model.Options)
+        ? new List<string>()
+        : Model.Options.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries).ToList();
+
+    var fieldId = Model.ClientId;
+    var w = string.IsNullOrWhiteSpace(Model.Width) ? "100%" : Model.Width;
+    var gridSpan = w switch
+    {
+        "75%" => 9,
+        "50%" => 6,
+        "33%" => 4,
+        "25%" => 3,
+        _ => 12
+    };
+    var widthStyle = $"grid-column: span {gridSpan};";
+    var cssClass = Model.CssClass ?? string.Empty;
+    var requiredAttr = Model.IsRequired ? "required" : null;
+    var readonlyAttr = Model.IsReadOnly ? "readonly" : null;
+    var hiddenClass = Model.IsHidden ? "d-none" : string.Empty;
+}
+
+<div class="form-field-wrapper @hiddenClass" data-field-id="@fieldId" data-field-type="@((int)Model.FieldType)" style="@widthStyle">
+    @switch (Model.FieldType)
+    {
+        case FieldType.Heading:
+            <h4 class="@cssClass">@Model.Label</h4>
+            break;
+        case FieldType.Paragraph:
+            <p class="text-muted @cssClass">@Model.Label</p>
+            break;
+        case FieldType.Divider:
+            <hr class="@cssClass" />
+            break;
+        case FieldType.Spacer:
+            <div style="height: @(string.IsNullOrWhiteSpace(Model.DefaultValue) ? "24" : Model.DefaultValue)px;" class="@cssClass"></div>
+            break;
+        case FieldType.Image:
+            if (!string.IsNullOrWhiteSpace(Model.DefaultValue))
+            {
+                <img src="@Model.DefaultValue" alt="@Model.Label" class="img-fluid @cssClass" />
+            }
+            break;
+        case FieldType.HtmlBlock:
+            @Html.Raw(Model.DefaultValue)
+            break;
+        case FieldType.HiddenField:
+            <input type="hidden" name="@fieldId" id="@fieldId" value="@Model.DefaultValue" class="@cssClass" />
+            break;
+        case FieldType.Textarea:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <textarea name="@fieldId" id="@fieldId" class="form-control @cssClass" placeholder="@Model.Placeholder"
+                      rows="4" @requiredAttr @readonlyAttr
+                      minlength="@Model.MinLength" maxlength="@Model.MaxLength"
+                      pattern="@Model.RegexPattern">@Model.DefaultValue</textarea>
+            break;
+        case FieldType.Dropdown:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <select name="@fieldId" id="@fieldId" class="form-select @cssClass" @requiredAttr @readonlyAttr>
+                <option value="">Seçiniz...</option>
+                @foreach (var opt in options)
+                {
+                    <option value="@opt" selected="@(Model.DefaultValue == opt)">@opt</option>
+                }
+            </select>
+            break;
+        case FieldType.RadioButton:
+            <label class="form-label d-block">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            @for (var i = 0; i < options.Count; i++)
+            {
+                var opt = options[i];
+                var radioId = $"{fieldId}_{i}";
+                <div class="form-check">
+                    <input class="form-check-input @cssClass" type="radio" name="@fieldId" id="@radioId" value="@opt"
+                           @(Model.IsRequired ? "required" : "") @(Model.DefaultValue == opt ? "checked" : "") @readonlyAttr />
+                    <label class="form-check-label" for="@radioId">@opt</label>
+                </div>
+            }
+            break;
+        case FieldType.Checkbox:
+            <label class="form-label d-block">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            @for (var i = 0; i < options.Count; i++)
+            {
+                var opt = options[i];
+                var checkId = $"{fieldId}_{i}";
+                <div class="form-check">
+                    <input class="form-check-input @cssClass" type="checkbox" name="@fieldId" id="@checkId" value="@opt" @readonlyAttr />
+                    <label class="form-check-label" for="@checkId">@opt</label>
+                </div>
+            }
+            break;
+        case FieldType.MultiSelect:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <select name="@fieldId" id="@fieldId" class="form-select @cssClass" multiple @requiredAttr @readonlyAttr>
+                @foreach (var opt in options)
+                {
+                    <option value="@opt">@opt</option>
+                }
+            </select>
+            break;
+        case FieldType.FileUpload:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="file" name="@fieldId" id="@fieldId" class="form-control @cssClass" @requiredAttr />
+            break;
+        case FieldType.ImageUpload:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="file" name="@fieldId" id="@fieldId" class="form-control @cssClass" accept="image/*" @requiredAttr />
+            break;
+        case FieldType.Signature:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="text" name="@fieldId" id="@fieldId" class="form-control @cssClass" placeholder="İmza (metin)" @requiredAttr @readonlyAttr />
+            break;
+        case FieldType.Rating:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="number" name="@fieldId" id="@fieldId" class="form-control @cssClass" min="1" max="5" @requiredAttr @readonlyAttr />
+            break;
+        case FieldType.Slider:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="range" name="@fieldId" id="@fieldId" class="form-range @cssClass"
+                   min="@(Model.MinValue ?? 0)" max="@(Model.MaxValue ?? 100)" value="@(Model.DefaultValue ?? "50")" @requiredAttr @readonlyAttr />
+            break;
+        case FieldType.Number:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="number" name="@fieldId" id="@fieldId" class="form-control @cssClass" placeholder="@Model.Placeholder"
+                   value="@Model.DefaultValue" @requiredAttr @readonlyAttr
+                   min="@Model.MinValue" max="@Model.MaxValue" />
+            break;
+        case FieldType.Email:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="email" name="@fieldId" id="@fieldId" class="form-control @cssClass" placeholder="@Model.Placeholder"
+                   value="@Model.DefaultValue" @requiredAttr @readonlyAttr
+                   minlength="@Model.MinLength" maxlength="@Model.MaxLength" pattern="@Model.RegexPattern" />
+            break;
+        case FieldType.Phone:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="tel" name="@fieldId" id="@fieldId" class="form-control @cssClass" placeholder="@Model.Placeholder"
+                   value="@Model.DefaultValue" @requiredAttr @readonlyAttr
+                   minlength="@Model.MinLength" maxlength="@Model.MaxLength" pattern="@Model.RegexPattern" />
+            break;
+        case FieldType.Date:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="date" name="@fieldId" id="@fieldId" class="form-control @cssClass"
+                   value="@Model.DefaultValue" @requiredAttr @readonlyAttr />
+            break;
+        case FieldType.Time:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="time" name="@fieldId" id="@fieldId" class="form-control @cssClass"
+                   value="@Model.DefaultValue" @requiredAttr @readonlyAttr />
+            break;
+        case FieldType.Password:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="password" name="@fieldId" id="@fieldId" class="form-control @cssClass" placeholder="@Model.Placeholder"
+                   @requiredAttr @readonlyAttr minlength="@Model.MinLength" maxlength="@Model.MaxLength" />
+            break;
+        default:
+            <label for="@fieldId" class="form-label">@Model.Label @(Model.IsRequired ? "*" : "")</label>
+            <input type="text" name="@fieldId" id="@fieldId" class="form-control @cssClass" placeholder="@Model.Placeholder"
+                   value="@Model.DefaultValue" @requiredAttr @readonlyAttr
+                   minlength="@Model.MinLength" maxlength="@Model.MaxLength" pattern="@Model.RegexPattern" />
+            break;
+    }
+
+    @if (!string.IsNullOrWhiteSpace(Model.HelpText) && Model.FieldType is not FieldType.Heading and not FieldType.Paragraph and not FieldType.Divider and not FieldType.Spacer)
+    {
+        <div class="form-text">@Model.HelpText</div>
+    }
+</div>
