@@ -1,6 +1,6 @@
 # Dynamic Form Builder
 
-Jotform benzeri dinamik form oluşturma sistemi. ASP.NET Core MVC ile katmanlı mimari kullanılarak geliştirilmiştir.
+Dinamik form oluşturma sistemi. ASP.NET Core MVC ile katmanlı mimari kullanılarak geliştirilmiştir.
 
 ## Teknolojiler
 
@@ -137,6 +137,3 @@ https://localhost:5001/PublicForm/Fill/contact-form
 - Form Builder kaydetme endpoint'i JSON API olarak çalışır
 - Koşullu mantık client-side (preview/public) ve server-side kayıt ile desteklenir
 
-## Lisans
-
-MIT (veya proje sahibinin belirlediği lisans)
